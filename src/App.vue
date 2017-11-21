@@ -3,7 +3,7 @@
     <router-view></router-view>
     <div class="foot">
       <ul class="hfood">
-        <li><router-link to="/homepage">首页</router-link></li>
+        <li><router-link to="/firstpage">首页</router-link></li>
         <li><router-link to="/classify">分类</router-link></li>
         <li><router-link to="/shopcard">购物车</router-link></li>
         <li><router-link to="/mycat">我的E宠</router-link></li>
@@ -25,13 +25,14 @@ export default {
     left 0px
     width 375px
     height 55px
+    z-index 100
+    background white
     .hfood
       line-height 60px
+      overflow hidden
       li
         float: left
         width: 55px
         height: 55px
         margin-left 30px
-
-
 </style>

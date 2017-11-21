@@ -22,28 +22,28 @@
           </span>
         </div>
       </div>
-      <div id="navsWrap">
-        <ul id="navList">
+      <div id="navsWrap" ref="map">
+        <ul id="navList" ref="ul">
           <li class="active">
-            <a href="#">首页</a>
+            <router-link to="/firstpage">首页</router-link>
           </li>
           <li>
-            <a href='#'>服饰城</a>
+            <router-link to="/firstpage/second">服饰城</router-link>
           </li>
           <li>
-            <a href='#'>狗狗主粮</a>
+            <router-link to="/firstpage/three">狗狗主粮</router-link>
           </li>
           <li>
-            <a href='#'>医疗保健</a>
+            <router-link to="/firstpage/four">医疗保健</router-link>
           </li>
           <li>
-            <a href='#'>零食玩具</a>
+            <router-link to="/firstpage/five">零食玩具</router-link>
           </li>
           <li>
-            <a href='#'>日用外出</a>
+            <router-link to="/firstpage/six">日用外出</router-link>
           </li>
           <li>
-            <a href='#'>美容香波</a>
+            <router-link to="/firstpage/seven">美容香波</router-link>
           </li>
         </ul>
       </div>
@@ -53,13 +53,13 @@
 
 <script>
   export default {
-
+    methods: {}
   }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
   .wrap
-    width 375px
+    max-width: 375px;
     position fixed
     left 0px
     top:0
@@ -89,12 +89,11 @@
       height: 35px;
       min-width: 320px;
       #navList
-        float: left;
+        overflow hidden
         white-space: nowrap;
         font-size: 0;
         display flex
         li
-          display: inline-block;
           float left
           padding 0 10px
           .active
