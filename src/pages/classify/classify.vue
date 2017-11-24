@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <div class="wrap">
-      <div class="header">
-        <div class="list">
-          <router-link to="/classify"><span class="qw">分类</span></router-link>
-          <router-link to="/classify/brand"><span>商品</span></router-link>
+    <div class="wrap1">
+        <div class="header1">
+          <div class="list">
+            <router-link to="/classify"><span class="qw">分类</span></router-link>
+            <router-link to="/classify/brand"><span>商品</span></router-link>
+          </div>
         </div>
+        <router-view></router-view>
       </div>
-      <router-view></router-view>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -19,11 +17,19 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-  .wrap
+  .wrap1
     width 375px
     height 100%
-    .header
+    position relative
+    overflow hidden
+    .header1
+      width 100%
       height 40px
+      position fixed
+      top 0
+      left 0
+      z-index 30
+      background white
       .list
         margin-left 115px
         .qw

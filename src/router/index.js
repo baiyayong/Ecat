@@ -4,7 +4,6 @@ import firstpage from '../pages/fristpage/firstpage.vue'
 import classify from '../pages/classify/classify.vue'
 import mycat from '../pages/mycat/mycat.vue'
 import shopcard from '../pages/shopcard/shopcard.vue'
-
 import first from '../components/homepage/homepage.vue'
 import second from '../components/second.vue'
 import three from '../components/three.vue'
@@ -20,7 +19,7 @@ export default new vueRouter({
   routes:[
     {
       path:'/',
-      redirect:'firstpage'
+      redirect:'/firstpage'
     },
     {
       path:'/firstpage',
@@ -69,7 +68,7 @@ export default new vueRouter({
     },
     {
       path:'/mycat',
-      component:mycat
+      component:mycat,
     }
   ]
 })
